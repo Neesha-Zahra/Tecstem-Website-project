@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tecstem</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-black">
+
+    <!-- ── NAVBAR ── -->
+    <nav class="w-full h-16 md:h-20 bg-black/80 backdrop-blur-xl border-b border-white/10 px-4 md:px-8 flex items-center justify-between fixed top-0 left-0 z-50">
+
+        <!-- LOGO -->
+        <div class="flex items-center gap-3 cursor-pointer">
+            <div class="relative w-5 h-8 md:w-6 md:h-10 bg-gradient-to-b from-lime-400 to-lime-600 skew-x-[-10deg] shadow-[0_0_10px_rgba(16,185,129,0.4)]"
+                style="clip-path: polygon(0 0,68% 0,100% 50%,68% 100%,0 100%,42% 50%);">
+                <div class="absolute w-[7px] h-[7px] bg-emerald-300 -left-[5px] top-[6px] rotate-[-10deg]"
+                    style="clip-path: polygon(0 0,100% 20%,70% 100%,0 80%);">
+                </div>
+                <div class="absolute w-[8px] h-[8px] bg-emerald-600 -left-[6px] bottom-[4px] rotate-[-10deg]"
+                    style="clip-path: polygon(20% 0,100% 30%,80% 100%,0 70%);">
+                </div>
+            </div>
+            <div>
+                <h1 class="text-xl md:text-2xl font-bold tracking-wide">
+                    <span class="text-white">Tec</span><span class="text-lime-400">stem</span>
+                </h1>
+                <p class="text-[7px] md:text-[8px] tracking-[4px] md:tracking-[5px] text-gray-400">TECHNOLOGIES</p>
+            </div>
+        </div>
+
+        <!-- CENTER LINKS - desktop -->
+        <ul class="hidden md:flex items-center gap-10 text-gray-300 font-medium">
+            <li class="hover:text-lime-400 transition duration-300 cursor-pointer">Home</li>
+            <li class="hover:text-lime-400 transition duration-300"><a href="/Courses.html">Courses</a></li>
+            <li class="hover:text-lime-400 transition duration-300"><a href="/AboutUs.html">About</a></li>
+            <li class="hover:text-lime-400 transition duration-300"><a href="/Contact.html">Contact</a></li>
+        </ul>
+
+        <!-- RIGHT -->
+        <div class="flex items-center gap-3">
+            <a href="/Courses.html">
+                <button class="px-4 py-1.5 md:px-6 md:py-2 rounded-full bg-gradient-to-b from-lime-400 to-lime-600 text-white text-sm md:text-base font-semibold transition-all duration-500 hover:scale-105 shadow-[0_0_20px_rgba(132,204,22,0.5)]">
+                    Get Started
+                </button>
+            </a>
+            <!-- Hamburger - mobile only -->
+            <button id="menuBtn" class="md:hidden flex flex-col gap-1.5 p-1" onclick="toggleMenu()">
+                <span class="w-6 h-0.5 bg-white block transition-all"></span>
+                <span class="w-6 h-0.5 bg-white block transition-all"></span>
+                <span class="w-6 h-0.5 bg-white block transition-all"></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- MOBILE MENU -->
+    <div id="mobileMenu" class="hidden fixed top-16 left-0 right-0 z-40 bg-black/95 backdrop-blur-xl border-b border-white/10 px-6 py-6 flex flex-col gap-5 text-gray-300 font-medium text-lg">
+        <a href="#" class="hover:text-lime-400 transition">Home</a>
+        <a href="/Courses.html" class="hover:text-lime-400 transition">Courses</a>
+        <a href="/AboutUs.html" class="hover:text-lime-400 transition">About</a>
+        <a href="/Contact.html" class="hover:text-lime-400 transition">Contact</a>
+    </div>
+
+    <!-- ── HERO SECTION ── -->
+    <section class="relative w-full h-screen overflow-hidden">
+        <img src="/images/img-4.png" class="absolute inset-0 w-full h-full object-cover opacity-90" />
+        <div class="absolute inset-0 bg-black/60"></div>
+
+        <!-- CONTENT -->
+        <div class="absolute inset-0 flex flex-col justify-center z-20 px-6 sm:px-10 md:px-14 pt-16">
+            <h1 class="bg-gradient-to-r from-lime-500 via-green-500 to-lime-500 bg-clip-text text-transparent font-bold font-serif leading-tight text-3xl sm:text-5xl md:text-6xl lg:text-7xl uppercase">
+                BEST EDUCATION <br>
+                AND CAREER <br>
+                OPPORTUNITIES
+            </h1>
+
+            <a href="/Contact.html">
+                <h2 class="text-lime-400 font-extrabold text-lg md:text-2xl underline mt-6 md:mt-10">
+                    ENROL NOW
+                </h2>
+            </a>
+
+            <p class="text-black bg-gradient-to-b from-green-500 to-lime-600 text-center font-semibold mt-3 py-1 rounded-2xl w-48 md:w-56 text-sm">
+                For More Information
+            </p>
+
+            <p class="font-semibold text-white mt-3 border border-lime-700 rounded-2xl py-1 px-3 w-48 md:w-56 text-center text-sm">
+                <span class="text-base">🌐</span> www.Tecstem.com
+            </p>
+
+            <p class="font-semibold text-white mt-3 border border-lime-700 rounded-2xl py-1 px-3 w-48 md:w-56 text-center text-sm">
+                <span class="text-base">📍</span> Visit Campus
+            </p>
+        </div>
+    </section>
+
+    <!-- ── FOOTER ── -->
+    <footer class="relative bg-[#050505] border-t border-lime-500/20 overflow-hidden">
+        <div class="absolute inset-0" style="background-image: linear-gradient(rgba(132,204,22,0.03) 1px, transparent 1px), linear-gradient(90deg, rgba(132,204,22,0.03) 1px, transparent 1px); background-size: 60px 60px;"></div>
+        <div class="absolute bottom-0 left-1/2 -translate-x-1/2 w-[500px] h-32 bg-lime-500/10 blur-[100px] rounded-full"></div>
+
+        <div class="relative max-w-7xl mx-auto px-6 md:px-8 py-10 md:py-14">
+            <div class="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-8 md:gap-10 border-b border-white/10 pb-10">
+
+                <!-- ABOUT -->
+                <div class="col-span-2 md:col-span-1">
+                    <h2 class="text-2xl font-bold text-white">Tec<span class="text-lime-400">stem</span></h2>
+                    <p class="text-sm text-gray-400 mt-4 leading-relaxed">Empowering students with modern technology skills, future-ready education, and career opportunities.</p>
+                </div>
+
+                <!-- QUICK LINKS -->
+                <div>
+                    <h2 class="text-white font-bold text-base md:text-lg mb-4 md:mb-5">Quick Links</h2>
+                    <ul class="space-y-3 text-gray-400 text-sm">
+                        <li><a href="#" class="hover:text-lime-400 transition">Home</a></li>
+                        <li><a href="/Courses.html" class="hover:text-lime-400 transition">Courses</a></li>
+                        <li><a href="/AboutUs.html" class="hover:text-lime-400 transition">About</a></li>
+                        <li><a href="/Contact.html" class="hover:text-lime-400 transition">Contact</a></li>
+                    </ul>
+                </div>
+
+                <!-- COURSES -->
+                <div>
+                    <h2 class="text-white font-bold text-base md:text-lg mb-4 md:mb-5">Popular Courses</h2>
+                    <ul class="space-y-3 text-gray-400 text-sm">
+                        <li class="hover:text-lime-400 transition cursor-pointer">Artificial Intelligence</li>
+                        <li class="hover:text-lime-400 transition cursor-pointer">Full Stack Development</li>
+                        <li class="hover:text-lime-400 transition cursor-pointer">Cyber Security</li>
+                        <li class="hover:text-lime-400 transition cursor-pointer">Graphic Designing</li>
+                    </ul>
+                </div>
+
+                <!-- CONTACT -->
+                <div>
+                    <h2 class="text-white font-bold text-base md:text-lg mb-4 md:mb-5">Contact Info</h2>
+                    <div class="space-y-3 text-sm text-gray-400">
+                        <p>📍 Garden Town, Lahore</p>
+                        <p>📞 +92 300 8467836</p>
+                        <p>✉️ info@tecstem.com</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="flex flex-col md:flex-row items-center justify-between gap-3 pt-6 text-xs md:text-sm text-gray-500">
+                <p>© 2026 Tecstem Technologies. All Rights Reserved.</p>
+                <div class="flex gap-5">
+                    <a href="#" class="hover:text-lime-400 transition">Privacy Policy</a>
+                    <a href="#" class="hover:text-lime-400 transition">Terms & Conditions</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WHATSAPP -->
+    <a href="https://wa.me/923008467836" target="_blank"
+        class="fixed bottom-5 right-5 z-50 flex items-center gap-2 bg-[#25D366] hover:bg-[#20b858] text-white text-sm font-semibold px-3 py-2 md:px-4 md:py-3 rounded-full shadow-lg transition-all duration-200 hover:-translate-y-1">
+        💬 <span class="hidden sm:inline">Chat with us</span>
+    </a>
+
+    <!-- <script>
+        function toggleMenu() {
+            const menu = document.getElementById('mobileMenu');
+            menu.classList.toggle('hidden');
+        }
+    </script> -->
+</body>
+</html>
